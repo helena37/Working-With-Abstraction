@@ -1,0 +1,17 @@
+package HotelReservation;
+
+public enum DiscountType {
+    VIP(20),
+    SECONDVISIT(10),
+    NONE(0);
+
+    private int percentDiscount;
+
+    DiscountType(int percentDiscount) {
+        this.percentDiscount = percentDiscount;
+    }
+
+    public int getPercentDiscount() {
+        return percentDiscount;
+    }
+}
