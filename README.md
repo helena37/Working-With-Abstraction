@@ -2,8 +2,11 @@
 Java OOP SoftUni Lab + Exercises
 
 Working with Abstraction: Lab
+
 This document defines the lab for "Java Advanced" course @ Software University. Please submit your solutions (source code) of all below described problems in Judge.
+
 Problem 1. Rhombus of Stars
+
 Create a program that reads a positive integer n as input and prints on the console a rhombus with size n:
 Examples
 input	output		input	output		input	output		input	output
@@ -29,40 +32,9 @@ Input
 •	On the second line, read an integer N and on the next N lines, read the coordinates of points.
 Output
 •	For each point, print out the result of the Contains() method.
-Examples
-input	output		input	output		input	output
-0 0 3 3
-5
-0 0
-0 1
-4 4
-5 3
-1 2	true
-true
-false
-false
-true		2 -3 12 3
-4
-8 -1
-11 3
-1 1
-2 4	true
-true
-false
-false		5 8 12 15
-6
-0 0
-5 8
-12 15
-8 15
-7 15
-8 12	false
-true
-true
-true
-true
-true
+ 
 Problem 3. Student System
+
 You are given a working project for a small Student System, but the code is very poorly organized. Break up the code logically into smaller functional units – methods and classes and don’t break the functionality.
 The program supports the following commands:
 •	“Create <studentName> <studentAge> <studentGrade>” – creates a new student and adds them to the repository.
@@ -70,16 +42,9 @@ The program supports the following commands:
 “<studentName> is <studentAge> years old. <commentary>”, where the commentary is based on the student’s grade.
 •	“Exit” – closes the program.
 Do not add any extra validation or functionality to the app!
-Examples
-input	output
-Create Pesho 20 5.50
-Create Mimi 18 4.50
-Create Gosho 25 3
-Show Pesho
-Show Mimi
-Exit	Pesho is 20 years old. Excellent student.
-Mimi is 18 years old. Average student.
+ 
 Problem 4. Hotel Reservation
+
 Create a class PriceCalculator that calculates the total price of a holiday, given the price per day, number of days, the season and a discount type. The discount type and season should be enums.
 Use the class in your main() method to read input and print on the console the price of the whole holiday.
 The price per day will be multiplied depending on the season by:
@@ -111,7 +76,9 @@ input	output
 
 Exercises: Working with Abstraction
 This document defines the exercises for "Java Advanced" course @ Software University. Please submit your solutions (source code) of all below described problems in Judge.
+
 Problem 1.	Card Suit
+
 Create an enumeration type that has as its constants the four suits of a deck of playing cards (CLUBS, DIAMONDS, HEARTS, SPADES). Iterate over the values of the enumeration type and print all ordinal values and names. 
 Examples
 Input	Output
@@ -122,23 +89,9 @@ Ordinal value: 2; Name value: HEARTS
 Ordinal value: 3; Name value: SPADES
 Problem 2.	Card Rank
 Create an enumeration type that has as its constants the fourteen ranks of a deck of playing cards (ACE, TWO, THREE, FOUR, FIVE, SIX, SEVEN, EIGHT, NINE, TEN, JACK, QUEEN, KING). Iterate over the values of the enumeration type and print all ordinal values and names.
-Examples
-Input	Output
-Card Ranks	Card Ranks:
-Ordinal value: 0; Name value: ACE
-Ordinal value: 1; Name value: TWO
-Ordinal value: 2; Name value: THREE
-Ordinal value: 3; Name value: FOUR
-Ordinal value: 4; Name value: FIVE
-Ordinal value: 5; Name value: SIX
-Ordinal value: 6; Name value: SEVEN
-Ordinal value: 7; Name value: EIGHT
-Ordinal value: 8; Name value: NINE
-Ordinal value: 9; Name value: TEN
-Ordinal value: 10; Name value: JACK
-Ordinal value: 11; Name value: QUEEN
-Ordinal value: 12; Name value: KING
+
 Problem 3.	Cards with Power
+
 Create a program that generates a deck of cards (class Card) which have a power. The power of a card is calculated by adding the power of its rank plus the power of its suit.
 Rank powers are as follows: (ACE - 14, TWO - 2, THREE - 3, FOUR - 4, FIVE - 5, SIX - 6, SEVEN - 7, EIGHT - 8, NINE - 9, TEN - 10, JACK - 11, QUEEN - 12, KING - 13).
 Suit powers are as follows: (CLUBS - 0, DIAMONDS - 13, HEARTS - 26, SPADES - 39).
@@ -146,27 +99,18 @@ You will get a command consisting of two lines. On the first line you will recei
 Print the output in the format "Card name: ACE of SPADES; Card power: 53".
 Note
 Try using the enumeration types you have created in the previous problems but extending them with constructors and methods. Try using the Enum.valueOf().
-Examples
-Input	Output
-TWO
-CLUBS	Card name: TWO of CLUBS; Card power: 2
-ACE
-SPADES	Card name: ACE of SPADES; Card power: 53
+
 Problem 4.	Traffic Lights
 Implement a simple state machine in the form of a traffic light. Every traffic light has three possible signals - red, green and yellow. Each traffic light can be updated, which changes the color of its signal (e.g. if it is currently red, it changes to green, if it is green it changes to yellow). The order of signals is red -> green -> yellow -> red and so on.
 On the first line you will be given multiple traffic light signals in the format "RED GREEN YELLOW". They may be 3, more or less than 3. You need to make as many traffic lights as there are signals in the input.
 On the second line, you will receive the n number of times you need to change each traffic light's signal.
 Your output should consist of n number of lines, including each updated traffic light's signal. To better understand the problem, see the example below.
-Examples
-Input	Output
-GREEN RED YELLOW
-4	YELLOW GREEN RED
-RED YELLOW GREEN
-GREEN RED YELLOW
-YELLOW GREEN RED
+
 Exercises: Working with Abstraction
  In this section your job is to download source code for every problem and refactor it.
+ 
 Problem 5. Jedi Galaxy
+
 Pesho is Jedi and so he starts gathering stars to grow stronger.
 His galaxy is represented as a two-dimensional array. Every cell in the matrix is a star that has a value. Ivo starts at the given col and row. He can move only on the diagonal from the lowest left to the upper right, and adds to his score all the stars (values) from the cells he passes through. Unfortunately, there is always an Evil power that tries to prevent his success. 
 Evil power starts at the given row and col and instantly destroys all stars on the opposite diagonal – From lowest right to the upper left. 
@@ -190,16 +134,10 @@ Constraints
 •	The dimensions of the matrix will be integers in the range [5, 2000].
 •	The given rows will be valid integers in the range [0, 2000].
 •	The given columns will be valid integers in the range [-231 + 1, 231 - 1]. 
-Input	Output
-5 5
-5 -1
-5 5
-Let the Force be with you	48
-5 5
-4 -1
-4 5
-Let the Force be with you	29
+
+
 Problem 6. Greedy Times
+
 Finally, you have unlocked the safe and reached the treasure! Inside there are all kinds of gems, cash in different currencies and gold bullions. Next to you there is a bag which unfortunately has a limited space. You don’t have much time so you need to take as much wealth as possible! But in order to get a bigger amount of the most valuable items, you need to keep the following rules:
 •	The gold amount in your bag should always be more than or equal to the gem amount at any time
 •	The gem amount should always be more than or equal to the cash amount at any time
@@ -222,33 +160,4 @@ Constraints
 •	Each item of type gem will have a name - at least 4 symbols
 •	Time limit: 0.1 sec. Memory limit: 16 MB
  
-Examples
-Input	Output
-150
-Gold 28 Rubygem 16 USD 9 GBP 8	<Gold> $28
-##Gold - 28
-<Gem> $16
-##Rubygem - 16
-<Cash> $9
-##USD - 9
-24000010
-USD 1030 Gold 300000 EmeraldGem 900000 Topazgem 290000 CHF 280000 Gold 10000000 JPN 10000 Rubygem 10000000 KLM 3120010	<Gold> $10300000
-##Gold - 10300000
-<Gem> $10290000
-##Topazgem - 290000
-##Rubygem - 10000000
-<Cash> $3410010
-##KLM - 3120010
-##JPN - 10000
-##CHF - 280000
-80345
-RubyGem 70000 JAV 10960 Bau 60000 Gold 80000	<Gold> $80000
-##Gold - 80000
-90000000000
-Gold 0    BitCoinGem 0 USD 0	<Gold> $0
-##Gold - 0
-<Gem> $0
-##BitCoinGem - 0
-<Cash> $0
-##USD - 0
 
